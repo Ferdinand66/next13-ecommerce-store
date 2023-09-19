@@ -1,18 +1,18 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
-import Container from '@/components/ui/container';
-import useCart from '@/hooks/use-cart';
+// import Container from '@/components/ui/container';
+// import useCart from '@/hooks/use-cart';
 
-import Summary from './components/summary'
-import CartItem from './components/cart-item';
+import Summary from "./components/summary";
+import CartItem from "./components/cart-item";
 
 export const revalidate = 0;
 
 const CartPage = () => {
   const [isMounted, setIsMounted] = useState(false);
-  const cart = useCart();
+  // const cart = useCart();
 
   useEffect(() => {
     setIsMounted(true);
@@ -24,7 +24,7 @@ const CartPage = () => {
 
   return (
     <div className="bg-white">
-      <Container>
+      {/* <Container>
         <div className="px-4 py-16 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-bold text-black">Carrito de Compras</h1>
           <div className="mt-12 lg:grid lg:grid-cols-12 lg:items-start gap-x-12">
@@ -39,9 +39,9 @@ const CartPage = () => {
             <Summary />
           </div>
         </div>
-      </Container>
+      </Container> */}
     </div>
-  )
+  );
 };
 
 export default CartPage;
