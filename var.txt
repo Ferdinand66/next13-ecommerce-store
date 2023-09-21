@@ -1,1 +1,1 @@
-NEXT_PUBLIC_API_URL=http://localhost:3000/api/644c99aa-626f-4a71-8c38-3b6195aab140
+NEXT_PUBLIC_API_URL=http://localhost:3000/api/342bb1e6-3fa9-437a-80d6-911b88e52644
