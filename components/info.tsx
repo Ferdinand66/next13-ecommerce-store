@@ -2,7 +2,7 @@
 
 import { ShoppingCart } from "lucide-react";
 
-import Currency  from "@/components/ui/currency";
+import Currency from "@/components/ui/currency";
 import Button from "@/components/ui/button";
 import { Product } from "@/types";
 import useCart from "@/hooks/use-cart";
@@ -18,13 +18,13 @@ const Info: React.FC<InfoProps> = ({ data }) => {
     cart.addItem(data);
   }
 
-  return ( 
+  return (
     <div>
       <h1 className="text-3xl font-bold text-gray-900">{data.name}</h1>
       <div className="mt-3 flex items-end justify-between">
-        <p className="text-2xl text-gray-900">
+        <div className="text-2xl text-gray-900">
           <Currency value={data?.price} />
-        </p>
+        </div>
       </div>
       <hr className="my-4" />
       <div className="flex flex-col gap-y-6">
@@ -48,5 +48,5 @@ const Info: React.FC<InfoProps> = ({ data }) => {
     </div>
   );
 }
- 
+
 export default Info;
